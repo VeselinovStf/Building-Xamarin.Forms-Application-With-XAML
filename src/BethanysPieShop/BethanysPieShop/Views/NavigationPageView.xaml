@@ -3,8 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BethanysPieShop.Views.NavigationPageView">
 
-        <StackLayout>
+    <StackLayout>
         <Button x:Name="HomePageButton" Clicked="HomePage_Clicked" Text="Home Page" Margin="5"/>
+        <Button x:Name="PieOverviewPageButton" Clicked="PieOverviewPage_Clicked" Text="Pie's Overview" Margin="5"/>
+        <Button x:Name="BasketPageButton" Clicked="Basket_Clicked" Text="Basket" Margin="5"/>
+        <Button x:Name="ContactUsPageButton" Clicked="ContactUs_Clicked" Text="Contact Us" Margin="5"/>
     </StackLayout>
-    
+
 </ContentPage>

@@ -16,5 +16,28 @@ namespace BethanysPieShop.Views
         {
             InitializeComponent();
         }
+
+        private async void HomePage_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HomePage());
+        }
+
+        private async void PieOverviewPage_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PieOverviewPage());
+
+        }
+
+        private async void Basket_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BasketPage());
+
+        }
+
+        private async void ContactUs_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ContactusPage());
+
+        }
     }
 }
