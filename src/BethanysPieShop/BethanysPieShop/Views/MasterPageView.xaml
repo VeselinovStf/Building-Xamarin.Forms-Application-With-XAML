@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BethanysPieShop.Views.MasterPageView"
+             xmlns:views="clr-namespace:BethanysPieShop.Views;assembly=BethanysPieShop"
+             Title="Navigation">
+    <StackLayout>
+        <ListView x:Name="NavigationListView" x:FieldModifier="public">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type views:MasterDetailNavigationItem}">
+                    <views:MasterDetailNavigationItem Title="Home" Icon="home.png" Target="{x:Type views:HomePage}"/>
+                    <views:MasterDetailNavigationItem Title="Basket" Icon="basket.png" Target="{x:Type views:BasketPage}"/>
+                    <views:MasterDetailNavigationItem Title="Contact" Icon="contact.png" Target="{x:Type views:ContactusPage}"/>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding Icon}"/>
+                            <Label Grid.Column="1" Text="{Binding Title}"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

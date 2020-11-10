@@ -9,7 +9,9 @@ namespace BethanysPieShop
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new NavigationPageView());
+            //MainPage = new NavigationPage(new NavigationPageView());
+            //MainPage = new TabbedNavigationPage();
+            MainPage = new MasterDetailPageView();
         }
 
         protected override void OnStart()
