@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BethanysPieShop.Views.LoginPage">
+    <Grid>
+        <StackLayout
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            >
+            <Label 
+                FontSize="Title"
+                FontAttributes="Bold"
+                VerticalOptions="CenterAndExpand"
+                Text="Welcome to Bethanys Pie Shop"/>
+            <Label 
+                 FontSize="Large"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                Text="Login"/>
+            <Entry  Placeholder="User Name"/>
+            <Entry Placeholder="Password" IsPassword="True"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

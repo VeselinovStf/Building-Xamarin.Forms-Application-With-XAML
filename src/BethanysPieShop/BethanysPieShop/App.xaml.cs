@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using BethanysPieShop.Views;
+using Xamarin.Forms;
 
 namespace BethanysPieShop
 {
@@ -8,7 +9,7 @@ namespace BethanysPieShop
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()
