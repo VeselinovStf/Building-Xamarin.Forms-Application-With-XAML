@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BethanysPieShop.Views.PieDetailPage">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label 
+            FontSize="Large"
+            FontAttributes="Bold"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand"
+            Grid.ColumnSpan="2"
+            Text="Apple Pie"/>
+        <Image 
+            Grid.Row="1"
+            Source=""
+               WidthRequest="200"
+               HeightRequest="200"/>
+        <Label 
+            Grid.Row="2"
+            Text="$200"
+            HorizontalOptions="Start"/>
+
+        <Label 
+            Grid.Column="1"
+            Grid.Row="2"
+            Text="In Stock"
+            HorizontalOptions="End"/>
+        <Label 
+             Grid.ColumnSpan="2"
+            Grid.Row="3"
+            Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+             HorizontalOptions="CenterAndExpand" 
+            VerticalOptions="CenterAndExpand"/>
+        <Button 
+                   Grid.ColumnSpan="2"
+            Grid.Row="4"
+            BackgroundColor="#42f5a4" 
+            Text="ADD TO BASKET"/>
+    </Grid>
+</ContentPage>
