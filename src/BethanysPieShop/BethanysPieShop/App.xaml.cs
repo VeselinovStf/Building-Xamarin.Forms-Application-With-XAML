@@ -12,7 +12,8 @@ namespace BethanysPieShop
             //MainPage = new NavigationPage(new NavigationPageView());
             //MainPage = new TabbedNavigationPage();
             //MainPage = new MasterDetailPageView();
-            MainPage = new CarouselPageView();
+            //MainPage = new CarouselPageView();
+            MainPage = new ModalPageView();
         }
 
         protected override void OnStart()

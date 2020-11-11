@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BethanysPieShop.Views.ModalPageView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Display of Normal Img"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Margin="5" Text="View Large Img"
+                    Clicked="ButtonLargeImage_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
