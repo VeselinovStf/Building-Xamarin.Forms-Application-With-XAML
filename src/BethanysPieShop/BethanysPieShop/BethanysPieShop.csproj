@@ -16,46 +16,46 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\CarouselPageVIew.xaml.cs">
+    <Compile Update="Views\PagesDemos\CarouselPageVIew.xaml.cs">
       <DependentUpon>CarouselPageView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\BasketPage.xaml">
+    <EmbeddedResource Update="Views\PagesDemos\BasketPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\CarouselPageView.xaml">
+    <EmbeddedResource Update="Views\PagesDemos\CarouselPageView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\ContactusPage.xaml">
+    <EmbeddedResource Update="Views\PagesDemos\ContactusPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\HomePage.xaml">
+    <EmbeddedResource Update="Views\PagesDemos\HomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\LargeImagePage.xaml">
+    <EmbeddedResource Update="Views\PagesDemos\LargeImagePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\LoginPage.xaml">
+    <EmbeddedResource Update="Views\PagesDemos\LoginPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\MasterDetailPageView.xaml">
+    <EmbeddedResource Update="Views\PagesDemos\MasterDetailPageView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\MasterPageView.xaml">
+    <EmbeddedResource Update="Views\PagesDemos\MasterPageView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\ModalPageView.xaml">
+    <EmbeddedResource Update="Views\PagesDemos\ModalPageView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\NavigationPageView.xaml">
+    <EmbeddedResource Update="Views\PagesDemos\NavigationPageView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\PieOverviewPage.xaml">
+    <EmbeddedResource Update="Views\PagesDemos\PieOverviewPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\TabbedNavigationPage.xaml">
+    <EmbeddedResource Update="Views\PagesDemos\TabbedNavigationPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
