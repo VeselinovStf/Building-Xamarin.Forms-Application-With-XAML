@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BethanysPieShop.Views.RegisterPage"
+             Title="Register">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            
+        </Grid.RowDefinitions>
+        <StackLayout
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand">
+            <Image Source="bethanylogo.png" HeightRequest="150" Margin="10"/>
+            <Label Grid.Row="1" 
+               HorizontalOptions="CenterAndExpand" 
+               Text="Register now!"
+               FontSize="Large"
+               FontAttributes="Bold"/>
+        </StackLayout>
+        <StackLayout Grid.Row="1" Margin="10" Spacing="15" >
+            <Entry x:Name="UserName" Placeholder="User Name"/>
+            <Entry x:Name="Email" Placeholder="Email"/>
+            <Entry x:Name="Password" Placeholder="Password" IsPassword="True"/>
+            <Entry x:Name="ConfirmPassword" Placeholder="Confirm Password" IsPassword="True"/>
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Birth Day"/>
+                <DatePicker x:Name="Birthday"  Grid.Column="1"/>
+                <Label Grid.Row="1"  Text="Prefered Delivery Time"/>
+                <TimePicker Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+            
+            <Button 
+                x:Name="CreateAccountButton"
+                Text="Register" BackgroundColor="#42f5a4" 
+                Clicked="ButtonRegister_Clicked"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

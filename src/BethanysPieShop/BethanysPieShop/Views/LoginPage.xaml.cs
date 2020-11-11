@@ -16,5 +16,15 @@ namespace BethanysPieShop.Views
         {
             InitializeComponent();
         }
+
+        private void ButtonLogin_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonRegister_Clicked(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
