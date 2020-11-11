@@ -23,7 +23,9 @@
             Text="Apple Pie"/>
         <Image 
             Grid.Row="1"
-            Source=""
+            Grid.ColumnSpan="2"
+            HorizontalOptions="CenterAndExpand"
+            Source="icpie.png"
                WidthRequest="200"
                HeightRequest="200"/>
         <Label 
@@ -46,6 +48,7 @@
                    Grid.ColumnSpan="2"
             Grid.Row="4"
             BackgroundColor="#42f5a4" 
-            Text="ADD TO BASKET"/>
+            Text="ADD TO BASKET"
+            Clicked="AddToBasket_OnButtonClick"/>
     </Grid>
 </ContentPage>

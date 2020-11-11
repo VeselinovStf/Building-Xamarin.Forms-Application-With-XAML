@@ -20,9 +20,15 @@
                FontAttributes="Bold"/>
         </StackLayout>
         <StackLayout Grid.Row="1" Margin="10" Spacing="15" >
-            <Entry x:Name="UserName" Placeholder="User Name"/>
-            <Entry x:Name="Email" Placeholder="Email"/>
-            <Entry x:Name="Password" Placeholder="Password" IsPassword="True"/>
+            <Entry 
+                TextChanged="UserNameEntry_OnTextChanged"
+                x:Name="UserName" Placeholder="User Name"/>
+            <Entry 
+                TextChanged="EmailEntry_OnTextChanged"
+                x:Name="Email" Placeholder="Email"/>
+            <Entry 
+                TextChanged="PasswordEntry_OnTextChanged"
+                x:Name="Password" Placeholder="Password" IsPassword="True"/>
             <Grid >
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -33,9 +39,11 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Label Text="Birth Day" Margin="5,15,0,0"/>
-                <DatePicker x:Name="Birthday"  Grid.Column="1"/>
+                <DatePicker 
+                    DateSelected="BirthDayDatePicker_OnDateSelected"
+                    x:Name="BirthdayDatePicker"  Grid.Column="1"/>
                 <Label Grid.Row="1"  Text="Prefered Delivery Time" Margin="5,15,0,0"/>
-                <TimePicker Grid.Row="1" Grid.Column="1"/>
+                <TimePicker x:Name="PreferedDeliveryTime" Grid.Row="1" Grid.Column="1"/>
             </Grid>
             
             <Button 

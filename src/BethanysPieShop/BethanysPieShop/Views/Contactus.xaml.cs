@@ -19,6 +19,11 @@ namespace BethanysPieShop.Views
 
         private void ButtonSendMessage_Clicked(object sender, EventArgs e)
         {
+            DisplayAlert("Message Send", "Your message is send to Bethany", "Done");
+        }
+
+        private void ContactClientSwitch_OnToggle(object sender, ToggledEventArgs e)
+        {
 
         }
     }

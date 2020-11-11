@@ -16,5 +16,10 @@ namespace BethanysPieShop.Views
         {
             InitializeComponent();
         }
+
+        private void AddToBasket_OnButtonClick(object sender, EventArgs e)
+        {
+            DisplayAlert("Added", "Your Pie is added to basket", "Done");
+        }
     }
 }

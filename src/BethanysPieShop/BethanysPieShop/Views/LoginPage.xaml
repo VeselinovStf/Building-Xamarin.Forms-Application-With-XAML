@@ -15,8 +15,12 @@
                 VerticalOptions="CenterAndExpand"
                 Text="Welcome to Bethanys Pie Shop"
                 Margin="10"/>
-            <Entry  Placeholder="User Name"/>
-            <Entry Placeholder="Password" IsPassword="True"/>
+            <Entry  
+                x:Name="UserName"
+                Placeholder="User Name"/>
+            <Entry 
+                 x:Name="Password"
+                Placeholder="Password" IsPassword="True"/>
             <StackLayout 
                 HorizontalOptions="Center"
                 Orientation="Horizontal"
@@ -25,13 +29,13 @@
                 <Button 
                     x:Name="LoginButton"
                     Clicked="ButtonLogin_Clicked"
-                    BackgroundColor="#42f5a4" 
+                    BackgroundColor="#42f5a4"                  
                     Text="LOGIN" 
                     Margin="10"/>
                 <Button 
                     x:Name="RegisterButton"
                     Clicked="ButtonRegister_Clicked"
-                    BackgroundColor="#42f5b8"
+                    BackgroundColor="#42f5b8"                 
                     Text="REGISTER" 
                     Margin="10"/>
             </StackLayout>

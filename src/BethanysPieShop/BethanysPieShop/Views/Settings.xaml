@@ -12,7 +12,6 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-
         </Grid.RowDefinitions>
         <Label 
             HorizontalOptions="CenterAndExpand"
@@ -21,45 +20,63 @@
             Text="Settings"/>
         <StackLayout 
             Spacing="40"
-        HorizontalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand"
             VerticalOptions="CenterAndExpand"
-        Margin="15">
-            <Picker Grid.Row="1"
+            Margin="15">
+            <Picker 
+                    x:Name="LanguagePicker"
+                    Grid.Row="1"
                     Margin="0,60,0,0"
                     Title="Select your language for this app"
-                    >
-                <Picker.Items>
-                    <x:Array>
-                        <x:String>English</x:String>
-                        <x:String>Russian</x:String>
-                        <x:String>Bulgaian</x:String>
-                    </x:Array>
-                </Picker.Items>
-            </Picker>
+                    SelectedIndexChanged="LanguagePicker_OnSelectedIndexChange"    
+                    
+                />
             <StackLayout 
                 HorizontalOptions="CenterAndExpand"
                 Margin="10"
                 Grid.Row="2"
                 Orientation="Vertical">
                 <Label Text="Prefferd monthly bufget for pies"/>
+                <Label 
+                    x:Name="PieBudgetLabel"
+                    HorizontalOptions="CenterAndExpand"
+                    />
                 <Slider
-                Maximum="100"
+                    x:Name="PieBudgetSlider"
+                    Value="100"
+                Maximum="1000"
                 Minimum="0"
+                    ValueChanged="PieBudgetSlider_OnValueChanged"
                 />
             </StackLayout>
+            <Label 
+                    x:Name="MaxPieStepperValue"
+                     HorizontalOptions="CenterAndExpand"
+                    />
             <StackLayout 
                  Spacing="20"
                 Margin="10"
                 Grid.Row="3"
                 Orientation="Horizontal">
+               
                 <Label Text="Maximum pies you can order per month"/>
-
-                <Button Text="-"/>
-                <Button Text="+"/>
+               
+                <Stepper
+                    x:Name="MaxPieStepper"
+                    ValueChanged="MaxPieStepper_OnValueChanged"
+                    />
+                
             </StackLayout>
             <Button
                 BackgroundColor="#42f5a4" 
-                Text="Save Settings"/>
+                Text="Save Settings"
+                Clicked="SaveSettings_OnButtonClicked"/>
+
+            <ActivityIndicator
+                x:Name="SavingActivityIndicator"
+                Color="#22cfa7"
+                IsRunning="False"
+                />
         </StackLayout>
     </Grid>
 </ContentPage>

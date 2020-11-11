@@ -30,7 +30,7 @@
                 x:Name="MessageText"
                 Grid.Row="1" HeightRequest="200">
                 <Editor.Keyboard>
-                    <Keyboard x:FactoryMethod="Keyboard.Create">
+                    <Keyboard x:FactoryMethod="Create">
                         <x:Arguments>
                             <KeyboardFlags>Suggestions,Spellcheck</KeyboardFlags>
                         </x:Arguments>
@@ -48,7 +48,10 @@
                          HorizontalOptions="CenterAndExpand">
                 <Label Text="Should we contact you"
                        Margin="15"/>
-                <Switch />
+                <Switch  
+                    x:Name="ContactClientSwitch"
+                    Toggled="ContactClientSwitch_OnToggle"
+                    />
             </StackLayout>
             <Button 
                 Margin="0,30,0,0"
