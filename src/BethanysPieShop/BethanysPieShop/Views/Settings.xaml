@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BethanysPieShop.Views.Settings">
+
+    <Grid 
+         VerticalOptions="CenterAndExpand"
+        HorizontalOptions="CenterAndExpand"
+        Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+
+        </Grid.RowDefinitions>
+        <Label 
+            HorizontalOptions="CenterAndExpand"
+            FontSize="Large"
+            FontAttributes="Bold"
+            Text="Settings"/>
+        <StackLayout 
+            Spacing="40"
+        HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+        Margin="15">
+            <Picker Grid.Row="1"
+                    Margin="0,60,0,0"
+                    Title="Select your language for this app"
+                    >
+                <Picker.Items>
+                    <x:Array>
+                        <x:String>English</x:String>
+                        <x:String>Russian</x:String>
+                        <x:String>Bulgaian</x:String>
+                    </x:Array>
+                </Picker.Items>
+            </Picker>
+            <StackLayout 
+                HorizontalOptions="CenterAndExpand"
+                Margin="10"
+                Grid.Row="2"
+                Orientation="Vertical">
+                <Label Text="Prefferd monthly bufget for pies"/>
+                <Slider
+                Maximum="100"
+                Minimum="0"
+                />
+            </StackLayout>
+            <StackLayout 
+                 Spacing="20"
+                Margin="10"
+                Grid.Row="3"
+                Orientation="Horizontal">
+                <Label Text="Maximum pies you can order per month"/>
+
+                <Button Text="-"/>
+                <Button Text="+"/>
+            </StackLayout>
+            <Button
+                BackgroundColor="#42f5a4" 
+                Text="Save Settings"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
