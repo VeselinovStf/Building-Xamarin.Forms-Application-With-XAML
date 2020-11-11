@@ -10,21 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace BethanysPieShop.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage
+    public partial class Contactus : ContentPage
     {
-        public LoginPage()
+        public Contactus()
         {
             InitializeComponent();
         }
 
-        private void ButtonLogin_Clicked(object sender, EventArgs e)
+        private void ButtonSendMessage_Clicked(object sender, EventArgs e)
         {
 
-        }
-
-        private async void ButtonRegister_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new RegisterPage());
         }
     }
 }

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BethanysPieShop.Views.RegisterPage"
              Title="Register">
-    <Grid>
+    <Grid Margin="15">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -23,7 +23,6 @@
             <Entry x:Name="UserName" Placeholder="User Name"/>
             <Entry x:Name="Email" Placeholder="Email"/>
             <Entry x:Name="Password" Placeholder="Password" IsPassword="True"/>
-            <Entry x:Name="ConfirmPassword" Placeholder="Confirm Password" IsPassword="True"/>
             <Grid >
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -33,9 +32,9 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Label Text="Birth Day"/>
+                <Label Text="Birth Day" Margin="5,15,0,0"/>
                 <DatePicker x:Name="Birthday"  Grid.Column="1"/>
-                <Label Grid.Row="1"  Text="Prefered Delivery Time"/>
+                <Label Grid.Row="1"  Text="Prefered Delivery Time" Margin="5,15,0,0"/>
                 <TimePicker Grid.Row="1" Grid.Column="1"/>
             </Grid>
             

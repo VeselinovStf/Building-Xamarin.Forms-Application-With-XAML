@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BethanysPieShop.Views.Contactus"
+             Title="Contact Us">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackLayout
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand">
+            <Image Source="bethanylogo.png" HeightRequest="150" Margin="10"/>
+            <Label Grid.Row="1" 
+               HorizontalOptions="CenterAndExpand" 
+               Text="Send us a Message"
+               FontSize="Large"
+               FontAttributes="Bold"/>
+        </StackLayout>
+        <Grid Grid.Row="1" Margin="10" >
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition   Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Editor 
+                x:Name="MessageText"
+                Grid.Row="1" HeightRequest="200">
+                <Editor.Keyboard>
+                    <Keyboard x:FactoryMethod="Keyboard.Create">
+                        <x:Arguments>
+                            <KeyboardFlags>Suggestions,Spellcheck</KeyboardFlags>
+                        </x:Arguments>
+                    </Keyboard>
+                </Editor.Keyboard>
+                <Editor.BackgroundColor>
+                    <OnPlatform x:TypeArguments="Color">
+                        <On Platform="iOs" Value="#32c3ef"/>
+                        <On Platform="Android, UWP" Value="#83d5c2"/>
+                    </OnPlatform>
+                </Editor.BackgroundColor>
+            </Editor>
+            <StackLayout Grid.Row="2" Orientation="Horizontal"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="CenterAndExpand">
+                <Label Text="Should we contact you"
+                       Margin="15"/>
+                <Switch />
+            </StackLayout>
+            <Button 
+                Margin="0,30,0,0"
+                 Grid.Row="3"
+                x:Name="SendMessageButton"
+                Text="Send" BackgroundColor="#42f5a4" 
+                Clicked="ButtonSendMessage_Clicked"/>
+        </Grid>
+    </Grid>
+</ContentPage>
