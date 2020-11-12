@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BethanysPieShop.Views.SettingsTablePage"
+             Title="Settings">
+    <TableView Intent="Settings">
+        <TableRoot>
+            <TableSection Title="App Settings">
+                <ViewCell>
+                    <ViewCell.View>
+
+                        <StackLayout 
+                          Orientation="Horizontal"
+                            Padding="13,0">
+                            <Picker 
+                             x:Name="LanguagePicker"                           
+                           
+                             Title="Select your language for this app"
+                             SelectedIndexChanged="LanguagePicker_OnSelectedIndexChange"    
+                    
+                            />
+                        </StackLayout>
+                    </ViewCell.View>
+                </ViewCell>
+                <SwitchCell Text="Disable orders in app"></SwitchCell>
+                <SwitchCell Text="Allow deliveries on Synday"></SwitchCell>
+                <SwitchCell Text="Get Promo email"></SwitchCell>
+                <ViewCell>
+                    <ViewCell.View>
+                        <Button
+                        BackgroundColor="#42f5a4" 
+                        Text="Save Settings"
+                        Clicked="SaveSettings_OnButtonClicked"/>
+                    </ViewCell.View>
+                </ViewCell>
+                <ViewCell >
+                    <ViewCell.View>
+                        <ActivityIndicator
+                        x:Name="SavingActivityIndicator"
+                        Color="#22cfa7"
+                        IsRunning="False"
+                        />
+                    </ViewCell.View>
+                </ViewCell>
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>

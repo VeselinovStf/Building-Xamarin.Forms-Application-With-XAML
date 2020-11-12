@@ -12,7 +12,7 @@
                     <views:MasterDetailNavigationItem Title="Pie's" Icon="home.png" Target="{x:Type views:PieOverviewPage}"/>
                     <views:MasterDetailNavigationItem Title="Basket" Icon="basket.png" Target="{x:Type views:BasketPage}"/>
                     <views:MasterDetailNavigationItem Title="Contact" Icon="contact.png" Target="{x:Type views:Contactus}"/>
-                    <views:MasterDetailNavigationItem Title="Settings"  Target="{x:Type views:Settings}"/>
+                    <views:MasterDetailNavigationItem Title="Settings"  Target="{x:Type views:SettingsTablePage}"/>
                 </x:Array>
             </ListView.ItemsSource>
             <ListView.ItemTemplate>
