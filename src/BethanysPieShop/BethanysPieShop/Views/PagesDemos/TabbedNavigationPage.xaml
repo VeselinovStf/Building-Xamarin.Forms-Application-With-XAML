@@ -5,7 +5,7 @@
              x:Class="BethanysPieShop.Views.TabbedNavigationPage">
   <!--Pages can be added as references or inline-->
     <views:HomePage></views:HomePage>
-    <views:PieOverviewPage></views:PieOverviewPage>
+    <!--<views:PieOverviewPage></views:PieOverviewPage>-->
     <views:BasketPage></views:BasketPage>
     <views:ContactusPage></views:ContactusPage>
 </TabbedPage>

@@ -15,33 +15,38 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Label 
+            x:Name="Name"
             FontSize="Large"
             FontAttributes="Bold"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="CenterAndExpand"
             Grid.ColumnSpan="2"
-            Text="Apple Pie"/>
+            />
         <Image 
+            x:Name="ImageURI"
             Grid.Row="1"
             Grid.ColumnSpan="2"
             HorizontalOptions="CenterAndExpand"
-            Source="icpie.png"
+            
                WidthRequest="200"
                HeightRequest="200"/>
         <Label 
+            x:Name="Price"
             Grid.Row="2"
-            Text="$200"
+            
             HorizontalOptions="Start"/>
 
         <Label 
+            x:Name="InStock"
             Grid.Column="1"
             Grid.Row="2"
-            Text="In Stock"
+            
             HorizontalOptions="End"/>
         <Label 
+            x:Name="Description"
              Grid.ColumnSpan="2"
             Grid.Row="3"
-            Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+             
              HorizontalOptions="CenterAndExpand" 
             VerticalOptions="CenterAndExpand"/>
         <Button 

@@ -17,9 +17,9 @@ namespace BethanysPieShop.Views
             InitializeComponent();
         }
 
-        private void ButtonLogin_Clicked(object sender, EventArgs e)
+        private async void ButtonLogin_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new PieOverviewPage());
         }
 
         private async void ButtonRegister_Clicked(object sender, EventArgs e)

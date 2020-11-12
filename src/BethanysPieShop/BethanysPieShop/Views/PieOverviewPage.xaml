@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BethanysPieShop.Views.PieOverviewPage"
+             Title="Bethanys Pie's">
+    <ListView CachingStrategy="RecycleElement"
+             VerticalOptions="FillAndExpand"
+             x:Name="PieOverviewList">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <!--<ImageCell Text="{Binding Name}" ImageSource="{Binding ImageURI}" Detail="{Binding Price}"/>-->
+                <ViewCell>
+                    <Grid Margin="5" BackgroundColor="WhiteSmoke" RowSpacing="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding ImageURI}" WidthRequest="100" HeightRequest="100"/>
+                        <Label Grid.Column="1" Text="{Binding Name}"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="StartAndExpand"/>
+                        <Label Grid.Column="2" Text="{Binding Price}" 
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="EndAndExpand"/>
+                        <Button 
+                            Clicked="PieDetails_OnButtonClicked"
+                            Grid.Column="3" Text="Details"/>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

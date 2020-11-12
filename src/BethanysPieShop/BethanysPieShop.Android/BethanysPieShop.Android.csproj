@@ -85,7 +85,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\piesImg.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BethanysPieShop\BethanysPieShop.csproj">
       <Project>{A32CAC1B-8057-44BF-8F4E-26987386239F}</Project>

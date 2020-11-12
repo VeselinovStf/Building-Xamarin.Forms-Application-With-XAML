@@ -17,5 +17,7 @@ namespace BethanysPieShop.Models
         public double Price { get; set; }
 
         public bool InStock { get; set; }
+
+      
     }
 }

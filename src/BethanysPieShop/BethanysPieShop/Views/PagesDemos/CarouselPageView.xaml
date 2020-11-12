@@ -10,7 +10,7 @@
                 VerticalOptions="CenterAndExpand"
                 Text="Welcome to Bethanys Pie Shop"/>
     </ContentPage>
-    <views:PieOverviewPage></views:PieOverviewPage>
+    <!--<views:PieOverviewPage></views:PieOverviewPage>-->
     <views:BasketPage></views:BasketPage>
     <views:ContactusPage></views:ContactusPage>
 </CarouselPage> 
