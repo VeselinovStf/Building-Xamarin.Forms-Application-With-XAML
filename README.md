@@ -35,5 +35,8 @@ applications."
 
 - Adding Styles to Your Application
 
+## Status
+
+- Completed
 
 
