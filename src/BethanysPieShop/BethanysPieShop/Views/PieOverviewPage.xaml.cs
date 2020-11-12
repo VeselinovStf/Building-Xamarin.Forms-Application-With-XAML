@@ -36,7 +36,7 @@ namespace BethanysPieShop.Views
                 },
                 new Pie()
                 {
-                     Id = 1,
+                     Id = 1, 
                      Name = "Chery Pie",
                      Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.",
                      InStock = true,
@@ -100,11 +100,17 @@ namespace BethanysPieShop.Views
             };
 
             PieOverviewList.ItemsSource = pies;
+
+
+
         }
 
-        private async void PieDetails_OnButtonClicked(object sender, EventArgs e)
+
+        private async void PieOverviewList_OnSelectedItem(object sender, SelectedItemChangedEventArgs e)
         {
-            await Navigation.PushAsync(new PieDetailPage());
+            var selectedPie = e.SelectedItem as Pie;
+
+            await Navigation.PushAsync(new PieDetailPage(selectedPie));
         }
     }
 }

@@ -33,9 +33,11 @@ namespace BethanysPieShop.Views
 
             return true;
         }
-        private void ButtonRegister_Clicked(object sender, EventArgs e)
+        private async void ButtonRegister_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Success", "You Have Registered successfully", "Done");
+            await DisplayAlert("Success", "You Have Registered successfully", "Done");
+
+            await Navigation.PopAsync();
         }
 
         private void UserNameEntry_OnTextChanged(object sender, TextChangedEventArgs e)

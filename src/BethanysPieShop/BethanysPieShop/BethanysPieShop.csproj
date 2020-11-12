@@ -25,7 +25,10 @@
     <EmbeddedResource Update="Views\Contactus.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\PagesDemos\BasketPage.xaml">
+    <EmbeddedResource Update="Views\MasterPageNavigationListView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\BasketPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\PagesDemos\CarouselPageView.xaml">

@@ -5,7 +5,9 @@
              Title="Bethanys Pie's">
     <ListView CachingStrategy="RecycleElement"
              VerticalOptions="FillAndExpand"
-             x:Name="PieOverviewList">
+             x:Name="PieOverviewList"
+              IsPullToRefreshEnabled="True"
+              ItemSelected="PieOverviewList_OnSelectedItem">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <!--<ImageCell Text="{Binding Name}" ImageSource="{Binding ImageURI}" Detail="{Binding Price}"/>-->
@@ -27,9 +29,6 @@
                         <Label Grid.Column="2" Text="{Binding Price}" 
                                VerticalOptions="CenterAndExpand"
                                HorizontalOptions="EndAndExpand"/>
-                        <Button 
-                            Clicked="PieDetails_OnButtonClicked"
-                            Grid.Column="3" Text="Details"/>
                     </Grid>
                 </ViewCell>
             </DataTemplate>
