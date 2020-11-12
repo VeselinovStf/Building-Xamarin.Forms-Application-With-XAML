@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BethanysPieShop.Views.LoginPage"
              Title="Bethanys Pie Shop">
+   
     <Grid Margin="15">
         <StackLayout
             HorizontalOptions="CenterAndExpand"
@@ -14,6 +15,7 @@
                 FontAttributes="Bold"
                 VerticalOptions="CenterAndExpand"
                 Text="Welcome to Bethanys Pie Shop"
+                TextColor="{StaticResource BethanyGreenColor}"
                 Margin="10"/>
             <Entry  
                 x:Name="UserName"
@@ -29,15 +31,16 @@
                 <Button 
                     x:Name="LoginButton"
                     Clicked="ButtonLogin_Clicked"
-                    BackgroundColor="#42f5a4"                  
+                    Style="{StaticResource GreenButton}"
                     Text="LOGIN" 
-                    Margin="10"/>
+                    />
                 <Button 
                     x:Name="RegisterButton"
-                    Clicked="ButtonRegister_Clicked"
-                    BackgroundColor="#42f5b8"                 
-                    Text="REGISTER" 
-                    Margin="10"/>
+                    Clicked="ButtonRegister_Clicked"                                
+                    Text="REGISTER"
+                    Style="{StaticResource GreenButton}"
+                    />
+
             </StackLayout>
         </StackLayout>
        
