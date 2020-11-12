@@ -1,7 +1,7 @@
 # Building-Xamarin.Forms-Application-With-XAML
 "Building Xamarin.Forms Application With XAML" Pluralsight course repository
 
-![project final images](http://url/to/img.png)
+![project final images](https://github.com/VeselinovStf/Building-Xamarin.Forms-Application-With-XAML/blob/main/repoImg/demo.bmp)
 
 "Learn how to build Xamarin.Forms apps for iOS, Android, and Windows using XAML and C# by building an app from scratch."
 
